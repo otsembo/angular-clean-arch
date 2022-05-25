@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="icon" (click)="appDrawer.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Clean Architecture Sample</span>
+</mat-toolbar>
+
+<mat-drawer-container autosize class="page-container">
+    <mat-drawer #appDrawer mode="side" class="side-nav-creds" opened>
+        <mat-action-list class="">
+            <mat-list-item >
+                <a routerLink="/" routerLinkActive="active" style="color: black;">
+                    <button mat-icon-button class="icon">
+                        <mat-icon>home</mat-icon>
+                    </button>
+                    Home
+                </a>
+            </mat-list-item>
+
+            <mat-list-item >
+                <a routerLink="/users" routerLinkActive="active" style="color: black;">
+                    <button mat-icon-button class="icon">
+                        <mat-icon>account_circle</mat-icon>
+                    </button>
+                    Users
+                </a>
+            </mat-list-item>
+
+            <mat-list-item >
+                <a routerLink="/images" routerLinkActive="active" style="color: black;">
+                    <button mat-icon-button class="icon">
+                        <mat-icon>image</mat-icon>
+                    </button>
+                    Images
+                </a>
+            </mat-list-item>
+            
+        </mat-action-list>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+

@@ -1,0 +1,19 @@
+<mat-progress-bar mode="indeterminate" style="margin-top: 5%" *ngIf="isLoading"></mat-progress-bar>
+
+<div class="row" style="margin-top: 5%;"  *ngIf="!isLoading">
+    <div class="col s12 m4" *ngFor="let image of images">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{image.thumnail}}">
+          </div>
+          <div class="card-content" style="height: 100px;">
+            <p>{{image.title}}</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+</div>
+
+  
