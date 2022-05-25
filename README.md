@@ -27,7 +27,7 @@ The application has been built with the following:
 
 HOME | USERS | IMAGES
 ---- | ----- | ------ 
-<img src="screens/home.png" width="150"> | <img src="screens/users.png" width="150"> | <img src="screens/images.png" width="150">
+<img src="screens/home.png" width="350"> | <img src="screens/users.png" width="350"> | <img src="screens/images.png" width="350">
 
 
 
